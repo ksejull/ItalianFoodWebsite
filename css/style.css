@@ -218,10 +218,11 @@ body {
     background-color: #e5e3a7;
     position: absolute;
     top: 350px;
+    z-index: -1;
 }
 
 .dishes-block__item-block {
-    position: absolute;
+    position: relative;
     padding: 25px 0 50px 0;
     display: flex;
     flex-wrap: wrap;
@@ -497,12 +498,12 @@ body {
     margin: 0;
 }
 
-.contact-details {
+.footer__contact-details {
     display: flex;
     flex-direction: column;
 }
 
-.contact-details p {
+.footer__contact-details p {
     margin: 10px;
 }
 
@@ -558,28 +559,32 @@ body {
         display: none;
     }
 
+    .hero-block__picture-block {
+        padding: 80px 10px 100px 10px;
+    }
+
     .hero-block__picture-block__dish {
-        width: 400px;
-        height: 400px;
+        width: 365px;
+        height: 365px;
     }
 
     .hero-block__picture-block__pasta {
-        width: 70px;
-        height: 70px;
+        width: 55px;
+        height: 55px;
         top: 50px;
         left: 30px;
     }
 
     .hero-block__picture-block__leaf {
-        width: 70px;
-        height: 70px;
+        width: 55px;
+        height: 55px;
         top: 50px;
         right: 50px;
     }
 
     .hero-block__picture-block__tomato {
-        width: 70px;
-        height: 70px;
+        width: 55px;
+        height: 55px;
         bottom: 60px;
         left: 300px;
     }
@@ -643,7 +648,7 @@ body {
     .banner-block__advertisement1, 
     .banner-block__advertisement2,
     .banner-block__advertisement3 {
-        max-width: 400px;
+        max-width: 390px;
         margin: 0;
     }
 
@@ -671,7 +676,7 @@ body {
 
     .footer {
         background-color: black;
-        height: 900px;
+        height: 720px;
         background-image: none;
     }
 
@@ -691,9 +696,18 @@ body {
         text-align: center;
     }
 
+    .footer__contact-details {
+        padding-top: 30px;
+    }
+
+    .footer__contact-details i {
+        margin: 10px 5px;
+    }
+
     .footer__company-details {
         display: flex;
         flex-direction: column;
+        padding: 80px 100px 0;
     }
 
     .footer__company-details p {
