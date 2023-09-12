@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/78f151d3da.js" crossorigin="anonymous"></script>
 
@@ -33,7 +34,7 @@
             </div>
 
             <div class="header-block__menu">
-                <div class="menu menu_active">
+                <div class="menu">
                     <span class="menu__item">HOME</span>
                     <span class="menu__item">MENU</span>
                     <span class="menu__item">OUR STORY</span>
@@ -47,7 +48,7 @@
                     <img src="img/Leaf2.png" alt="Leaf" class="main-information__leaf">
 
                     <span class="main-information__text-script">Are You Hungry?</span>
-                    <span class="main-information__text-fredericka">DON'T WAIT!</span>
+                    <span class="main-information__text-fredericka wow animate__animated animate__rubberBand">DON'T WAIT!</span>
                     <span class="main-information__text-montserrat">LET START TO ORDER FOOD NOW</span>
 
                     <div class="day-offer">
@@ -59,11 +60,11 @@
                     </div>
 
                     <div class="order-button">
-                        <span class="order-button__text">ORDER NOW</span>
+                        <span class="order-button__text wow animate__animated animate__pulse">ORDER NOW</span>
                     </div>
                 </div>
 
-                <div class="picture-block">
+                <div class="picture-block wow animate__animated animate__bounceInRight">
                     <img src="img/Dish1.png" alt="Dish" class="picture-block__dish">
 
                     <img src="img/Pasta.png" alt="Pasta" class="picture-block__pasta">
@@ -98,32 +99,32 @@
             </div>
 
             <div class="dishes-block__item-block">
-               <div class="card card_margin">
+               <div data-wow-delay="1s" class="card card_margin wow animate__animated animate__bounceInLeft">
                     <div class="image-box">
                         <img src="img/Dish2.png" alt="Dish2" class="image-box__image">
                     </div>
 
                     <p class="card__title">LOREM IPSUM DOLOR</p>
                     <span class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</span>
-                    <span class="card__order-button">ORDER NOW</span>
+                    <span class="card__order-button wow animate__animated animate__pulse">ORDER NOW</span>
                </div>
-               <div class="card card_margin">
+               <div data-wow-delay=".5s" class="card card_margin wow animate__animated animate__bounceInLeft">
                     <div class="image-box">
                         <img src="img/Bread.png" alt="Bread" class="image-box__image">
                     </div>
                     
                     <p class="card__title">LOREM IPSUM DOLOR</p>
                     <span class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</span>
-                    <span class="card__order-button">ORDER NOW</span>
+                    <span class="card__order-button wow animate__animated animate__pulse">ORDER NOW</span>
                </div>
-               <div class="card">
+               <div class="card wow animate__animated animate__bounceInLeft">
                     <div class="image-box">
                         <img src="img/Dish3.png" alt="Dish3" class="image-box__image">
                     </div>
                    
                     <p class="card__title">LOREM IPSUM DOLOR</p>
                     <span class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</span>
-                    <span class="card__order-button">ORDER NOW</span>
+                    <span class="card__order-button wow animate__animated animate__pulse">ORDER NOW</span>
                </div>
             </div>
 
@@ -153,7 +154,7 @@
                     <img src="img/slide-img2.png" alt="side-image__image">
                 </div>
 
-                <img src="img/slide-img3.png" alt="Pizza" class="slide-block__central-img"> 
+                <img src="img/slide-img3.png" alt="Pizza" class="slide-block__central-img wow animate__animated animate__headShake"> 
             </div>
 
             <div class="ellipsis-block">
@@ -172,7 +173,7 @@
         <section class="banner-block">
        
             <div class="banner-block__advertisement1">
-                <div class="text-area1">
+                <div class="text-area1 wow animate__animated animate__tada">
                     <span class="text-area__small-text">TRY IT TODAY</span>
                     <p class="text-area__big-text1">MOST <br> POPULAR <br> PASTA</p>
                 </div>
@@ -180,13 +181,13 @@
 
             <div class="banner-block__double-banner">
                 <div class="banner-block__advertisement2">
-                    <div class="text-area2">
+                    <div data-wow-delay=".5s" class="text-area2 wow animate__animated animate__tada">
                         <span class="text-area__small-text">TRY IT TODAY</span>
                         <p class="text-area__big-text2">MORE FUT <br> MORE TASTE</p>
                     </div>
                 </div>
-                <div class="banner-block__advertisement3">
-                    <div class="text-area2">
+                <div data-wow-delay="1s" class="banner-block__advertisement3">
+                    <div class="text-area2 wow animate__animated animate__tada">
                         <span class="text-area__small-text">TRY IT TODAY</span>
                         <p class="text-area__big-text2">FRESH & CHILI</p>
                     </div>
@@ -215,7 +216,7 @@
                     <div class="form-box__column">
                         <input type="email" class="email" value="Email">
                         <input type="text" class="time" value="Time">
-                        <div class="form-box__order-button">
+                        <div class="form-box__order-button wow animate__animated animate__pulse">
                             <span>FIND A TABLE</span>
                         </div>
                     </div>
@@ -252,22 +253,21 @@
             <div class="company-details">
                 <p class="company-details__text">© Company Name 2020. All rights reserved</p>
                 <div class="social-media">
-                    <i class="fa-brands fa-square-instagram social-media__icon"></i>
-                    <i class="fa-brands fa-square-facebook social-media__icon"></i>
-                    <i class="fa-brands fa-square-twitter social-media__icon"></i>
-                    <i class="fa-brands fa-square-whatsapp social-media__icon"></i>
+                    <i class="fa-brands fa-square-instagram social-media__icon wow animate__animated animate__flash"></i>
+                    <i data-wow-delay=".2s" class="fa-brands fa-square-facebook social-media__icon wow animate__animated animate__flash"></i>
+                    <i data-wow-delay=".4s" class="fa-brands fa-square-twitter social-media__icon wow animate__animated animate__flash"></i>
+                    <i data-wow-delay=".6s" class="fa-brands fa-square-whatsapp social-media__icon wow animate__animated animate__flash"></i>
                 </div>
             </div>
 
         </div>
 
     </section>
-    
-    
-   
-        
-    
-    
 
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
