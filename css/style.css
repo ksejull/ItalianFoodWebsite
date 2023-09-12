@@ -567,6 +567,10 @@ body {
         display: none;
     }
 
+    .header-block__hero-block {
+        margin: 0 auto;
+    }
+
     .picture-block {
         padding: 80px 10px 100px 10px;
     }
@@ -684,6 +688,7 @@ body {
         flex-direction: column;
         align-items: center;
         max-width: 390px;
+        margin: 0 auto;
     }
 
     .form-box__column input, 
