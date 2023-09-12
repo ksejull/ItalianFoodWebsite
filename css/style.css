@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .container {
@@ -27,23 +28,23 @@ body {
     flex-wrap: wrap;
 }
 
-.header-block__top-content img {
-    width: 250px;
-    height: 65px;
-}
-
-.contact-details {
+.delivery-details {
     display: flex;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
-.contact-details img {
+.delivery-details__phone {
+    width: 250px;
+    height: 65px;
+}
+
+.delivery-details img {
     width: 30px;
     height: 55px;
 }
 
-.contact-details__delivery-number {
+.delivery {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,11 +52,11 @@ body {
     margin: 0 15px;
 }
 
-.contact-details__delivery-number span {
+.delivery__text {
     font-size: 17px;
 }
 
-.contact-details__delivery-number p {
+.delivery__number {
     margin: 0;
     font-size: 29px;
 }
@@ -73,7 +74,7 @@ body {
     flex-wrap: wrap;
 }
 
-.menu span {
+.menu__item {
     margin-left: 80px;
 }
 
@@ -82,7 +83,7 @@ body {
     flex-wrap: wrap;
 }
 
-.hero-block__main-info {
+.main-information {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,7 +93,7 @@ body {
     flex-wrap: wrap;
 }
 
-.hero-block__main-info__leaf {
+.main-information__leaf {
     max-width: 60px;
     max-height: 95px;
     position: absolute;
@@ -100,21 +101,21 @@ body {
     left: 20px;
 }
 
-.hero-block__main-info__script {
+.main-information__text-script {
     font-size: 58px;
     font-family: 'Dancing Script', cursive;
     font-weight: bold;
     margin-bottom: 25px;
 }
 
-.hero-block__main-info__fredericka {
+.main-information__text-fredericka {
     font-family: 'Fredericka the Great', cursive;
     font-size: 90px;
     text-align: center;
     margin-bottom: 35px;
 }
 
-.hero-block__main-info__montserrat {
+.main-information__text-montserrat {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 27px;
@@ -145,18 +146,17 @@ body {
     padding: 20px 40px;
 }
 
-.hero-block__picture-block {
+.picture-block {
     position: relative;
     padding: 80px 35px 140px 40px;
 }
 
-.hero-block__picture-block__dish {
+.picture-block__dish {
     max-width: 565px;
-    max-height: 565px;
-    
+    max-height: 565px;    
 }
 
-.hero-block__picture-block__pasta {
+.picture-block__pasta {
     width: 95px;
     height: 95px;
     position: absolute;
@@ -164,7 +164,7 @@ body {
     left: 30px;
 }
 
-.hero-block__picture-block__tomato {
+.picture-block__tomato {
     width: 80px;
     height: 80px;
     position: absolute;
@@ -172,7 +172,7 @@ body {
     left: 10px;
 }
 
-.hero-block__picture-block__leaf {
+.picture-block__leaf {
     width: 85px;
     height: 110px;
     position: absolute;
@@ -191,20 +191,20 @@ body {
     padding: 85px 150px 25px 150px;
 }
 
-.dishes-block__top-content p {
+.top-content__main-title {
     font-family:  'Fredericka the Great', cursive;
     font-size: 50px;
     margin: 0 0 30px 0;
     text-align: center;
 }
 
-.dishes-block__top-content span {
+.top-content__text {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     text-align: center;
 }
 
-.spaghetti img{
+.spaghetti__image {
     width: 300px;
     height: 300px;
     position: absolute;
@@ -212,7 +212,7 @@ body {
     left: -150px;
 }
 
-.bg-line {
+.dishes-block__bg-line {
     width: 100%;
     height: 140px;
     background-color: #e5e3a7;
@@ -239,18 +239,18 @@ body {
     margin-right: 110px;
 }
 
-.card__image {
+.image-box {
     width: 350px;
     height: 350px;
 }
 
-.card__image img {
+.image-box__image {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
 }
 
-.card p {
+.card__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 21px;
@@ -258,11 +258,12 @@ body {
     margin: 0;
 }
 
-.card span {
+.card__text {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     text-align: center;
     margin-top: 25px;
+    margin-bottom: 35px;
 }
 
 .card__order-button {
@@ -285,11 +286,11 @@ body {
     position: relative;
 }
 
-.slide-block__top-content {
+.slide-block__top-information {
     padding: 100px 150px 80px;
 }
 
-.slide-block__top-content__title {
+.top-information__title {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 21px;
@@ -298,7 +299,7 @@ body {
     margin-bottom: 12px;
 }
 
-.slide-block__top-content__main-title {
+.top-information__main-title {
     font-family:  'Fredericka the Great', cursive;
     font-size: 42px;
     text-align: center;
@@ -306,7 +307,7 @@ body {
     margin-bottom: 30px;
 }
 
-.slide-block__top-content__paragraph {
+.top-information__text {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     text-align: center;
@@ -329,15 +330,15 @@ body {
     justify-content: space-between;
 }
 
-.side-image img {
+.side-image__image {
     max-width: 405px;
     max-height: 350px;
 }
 
-.central-slide-img {
+.slide-block__central-img {
     position: absolute;
-    top: 175px;
-    left: 330px;
+    top: -80px;
+    left: 220px;
     width: 900px;
     max-height: 550px;
 }
@@ -348,13 +349,13 @@ body {
     justify-content: center;
 }
 
-.ellipsis-block i {
+.ellipsis-block__icon {
     font-size: 15px;
     margin: 3px;
     color: silver;
 }
 
-.ellipsis-block i:first-child {
+.ellipsis-block__icon:first-child {
     color: yellow;
 }
 
@@ -376,14 +377,14 @@ body {
     padding: 45px;
 }
 
-.banner-block__advertisement1 span, .text-area2 span {
+.text-area__small-text {
    color: white;
    font-family: 'Montserrat', sans-serif;
    font-size: 25px;
    font-weight: bold;
 }
 
-.banner-block__advertisement1 p {
+.text-area__big-text1 {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 42px;
@@ -408,7 +409,7 @@ body {
    padding: 30px;
 }
 
-.text-area2 p {
+.text-area__big-text2 {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 33px;
@@ -422,13 +423,13 @@ body {
     text-align: center;
 }
 
-.form-block span {
+.form-block__small-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 21px;
     font-weight: bold;
 }
 
-.form-block p {
+.form-block__title {
     font-family:  'Fredericka the Great', cursive;
     font-size: 50px;
     margin: 25px 0;
@@ -443,14 +444,14 @@ body {
     flex-direction: column;
 }
 
-.form-box__column input, .form-box__column input {
+.form-box__column input {
     margin-top: 25px;
     margin-left: 25px;
     padding: 15px;
     width: 350px;
 }
 
-.form-box__column__order-button {
+.form-box__order-button {
     width: 383px;
     height: 50px;
     background-color: yellow;
@@ -462,11 +463,11 @@ body {
     align-items: center;
 }
 
-.form-box__column__order-button:hover {
+.form-box__order-button:hover {
     cursor: pointer;
 }
 
-.form-box__column__order-button span {
+.form-box__order-button span {
     font-family: 'Montserrat', sans-serif;
     font-size: 21px;
     font-weight: bold; 
@@ -485,42 +486,44 @@ body {
     margin: 70px 100px;
 }
 
-.footer__content-block {
+.footer-content {
     display: flex;
     justify-content: space-between;
     color: white;
     padding: 15px 100px;
 }
 
-.footer__content-block p, .footer__company-details p {
+.footer-content__text, .company-details__text {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     margin: 0;
 }
 
-.footer__contact-details {
+.contact-details {
     display: flex;
     flex-direction: column;
 }
 
-.footer__contact-details p {
+.contact-details__item {
     margin: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
 }
 
-.footer__content-block i {
+.contact-details__icon {
     color: yellow;
     margin: 0px 30px;
     font-size: 30px;
 }
 
-.footer__company-details {
+.company-details {
     display: flex;
     justify-content: space-between;
     color: white;
     padding: 170px 100px 0; 
 }
 
-.social-media i {
+.social-media__icon {
     font-size: 25px;
     margin: 5px;
 }
@@ -535,7 +538,7 @@ body {
         text-align: center;
     }
 
-    .contact-details {
+    .delivery-details {
         margin-top: 20px;
     }
 
@@ -546,50 +549,50 @@ body {
         flex-wrap: wrap;
     }
 
-    .hero-block__main-info {
+    .main-information {
         padding-bottom: 0;
     }
 
-    .hero-block__main-info__montserrat,
-    .hero-block__main-info__script {
+    .main-information__text-montserrat,
+    .main-information__text-script {
         text-align: center;
     }
 
-    .hero-block__main-info__leaf {
+    .main-information__leaf {
         display: none;
     }
 
-    .hero-block__picture-block {
+    .picture-block {
         padding: 80px 10px 100px 10px;
     }
 
-    .hero-block__picture-block__dish {
+    .picture-block__dish {
         width: 365px;
         height: 365px;
     }
 
-    .hero-block__picture-block__pasta {
+    .picture-block__pasta {
         width: 55px;
         height: 55px;
         top: 50px;
         left: 30px;
     }
 
-    .hero-block__picture-block__leaf {
+    .picture-block__leaf {
         width: 55px;
         height: 55px;
         top: 50px;
         right: 50px;
     }
 
-    .hero-block__picture-block__tomato {
+    .picture-block__tomato {
         width: 55px;
         height: 55px;
         bottom: 60px;
         left: 300px;
     }
 
-    .spaghetti img {
+    .spaghetti__image {
         width: 200px;
         height: 200px;
         left: -120px;
@@ -602,7 +605,7 @@ body {
         text-align: center;
     }
 
-    .bg-line {
+    .dishes-block__bg-line {
         display: none;
     }
 
@@ -623,7 +626,7 @@ body {
     }
     
 
-    .slide-block__top-content {
+    .slide-block__top-information {
         padding: 25px 50px 30px;
         text-align: center;
     }
@@ -632,7 +635,7 @@ body {
         display: none;
     }
 
-    .slide-block__slide-image__central-img {
+    .slide-block__central-img {
         position: static;
         width: 100%;
     }
@@ -640,16 +643,22 @@ body {
     .ellipsis-block {
         margin: 0;
     }
+
+    .ellipsis-block__icon {
+        font-size: 12px;
+    }
     
     .banner-block {
         padding: 50px 0;
     }
-
-    .banner-block__advertisement1, 
+ 
     .banner-block__advertisement2,
     .banner-block__advertisement3 {
-        max-width: 390px;
-        margin: 0;
+        max-width: 380px;
+    }
+
+    .banner-block__double-banner {
+        margin: 0 auto;
     }
 
     .banner-block__advertisement2 {
@@ -659,6 +668,9 @@ body {
     .banner-block__advertisement1 {
         margin-right: 0;
         margin-bottom: 35px;
+        max-width: 380px;
+        margin: 0 auto;
+        margin-bottom: 35px;
     }
 
 
@@ -666,11 +678,12 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 390px;
     }
 
     .form-box__column input, 
-    .form-box__column__order-button  {
-        margin-left: 0; 
+    .form-box__order-button  {
+        margin-left: 0;  
     }
 
 
@@ -688,7 +701,7 @@ body {
         width: 200px;
     }
 
-    .footer__content-block  {
+    .footer-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -696,21 +709,21 @@ body {
         text-align: center;
     }
 
-    .footer__contact-details {
+    .contact-details {
         padding-top: 30px;
     }
 
-    .footer__contact-details i {
+    .contact-details__icon {
         margin: 10px 5px;
     }
 
-    .footer__company-details {
+    .company-details {
         display: flex;
         flex-direction: column;
         padding: 80px 100px 0;
     }
 
-    .footer__company-details p {
+    .company-details__text {
         margin: 5px;
     }
 
